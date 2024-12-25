@@ -9,7 +9,7 @@ metadata:
     app: nginx
     purpose: HELM
 spec:
-  replicas: 2
+  replicas: {{ .Values.deployment.replicas }} #refers values inside values.yaml 
   selector: 
     matchLabels:
       app: nginx

@@ -1,2 +1,4 @@
 configmap:
   port: 8080
+deployment:
+  replicas: 2

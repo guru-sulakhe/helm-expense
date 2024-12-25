@@ -9,6 +9,6 @@ spec:
     purpose: HELM
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 80
+    port: 80 #serviice port
+    targetPort: {{ .Values.configmap.port }} #refering port inside values.yaml
     

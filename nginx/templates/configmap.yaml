@@ -4,7 +4,6 @@ kind: configMap
 apiVersion: v1
 metadata:  
   name: frontend
-  namespace: expense
 data:
   # for not applying rebuild we need to mention nginx.conf file and also nginx can't be run on 80 port in kubernetes thus we are including out nginx.conf in configMap
   # thus changin port number of nginx to 8080

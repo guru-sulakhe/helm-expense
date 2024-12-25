@@ -22,4 +22,4 @@ spec:
         purpose: HELM
     spec:
     - name: nginx
-      image: nginx
+      image: nginx:{{ .Values.deployment.imageVersion}}

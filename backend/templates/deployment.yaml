@@ -26,7 +26,7 @@ spec:
         project: expense
     spec:
     - name: backend
-      image: guru1188/backend: {{ .Values.deployment.imageVersion }}
+      image: guru1188/backend:{{ .Values.deployment.imageVersion }}
       envFrom:
       - configMapRef:
           name: backend

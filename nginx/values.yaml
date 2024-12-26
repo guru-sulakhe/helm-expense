@@ -1,8 +1,8 @@
 configmap:
   port: 8080
 deployment:
-  replicas: 2
-  imageVersion: latest
+  replicas: 1
+  imageVersion: mainline-bookworm-perl
 service: 
   nodeport: 32134
   

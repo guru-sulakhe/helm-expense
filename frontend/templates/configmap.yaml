@@ -1,12 +1,12 @@
 #a configMap is used to store non-confidential data in key-value pairs.
-#This will helps in connecting to backend from frontend i..e ensuring connection to backend
+#This will helps in connecting to db-host from backend i..e ensuring connection to db
 kind: configMap
 apiVersion: v1
 metadata:  
   name: frontend
   namespace: expense
 data:
-  # for not applying rebuild we need to mention nginx.conf file and also nginx can't be run on 80 port in kubernetes thus we are including out nginx.conf in configMap
+  # for not applying rebuild we need to mention nginx.conf file and also nginx can't be run on 80 port in kubernetes thus we are including out nginx.conf
   # thus changin port number of nginx to 8080
   nginx.conf: |
   user www-data;

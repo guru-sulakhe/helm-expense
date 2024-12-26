@@ -1,4 +1,4 @@
-# This service is used to call baclemd Pod, by using selectors of backend
+# This service is used to call backend Pod, by using selectors of backend
 apiVersion: v1
 kind: Service
 metadata: 

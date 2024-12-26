@@ -8,7 +8,7 @@ metadata:
 spec: 
   selectors:
     project: expense
-    component: frontend
+    component: mysql
     tier: db
   ports:
   - protocol: TCP

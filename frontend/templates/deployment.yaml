@@ -10,7 +10,7 @@ metadata:
     project: expense
     tier: web
 spec:
-  replicas: 2
+  replicas: {{ .Values.deployment.replicas }}
   selector: 
     matchLabels:
       component: frontend
@@ -25,7 +25,7 @@ spec:
         project: expense
     spec:
     - name: frontend
-      image: guru1188/frontend:v1.0
+      image: guru1188/frontend:{{ .Values.deployment.imageVersion}}
       # mounting volume nginx-conf
       volumeMounts:
       - name: nginx-conf

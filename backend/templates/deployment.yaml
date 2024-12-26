@@ -10,7 +10,7 @@ metadata:
     project: expense
     tier: app
 spec:
-  replicas: 2
+  replicas: {{ .Values.deployment.replicas }}
   selector: 
     matchLabels:
       component: backend
@@ -25,7 +25,7 @@ spec:
         project: expense
     spec:
     - name: backend
-      image: guru1188/backend:v1.0
+      image: guru1188/backend: {{ .Values.deployment.imageVersion }}
       envFrom:
       - configMapRef:
           name: backend

@@ -1,0 +1,17 @@
+# This service is used to call mysql Pods
+apiVersion: v1
+kind: Service
+metadata: 
+  name: mysql
+  #attaching to expense namespace
+  namespace: expense
+spec: 
+  selectors:
+    project: expense
+    component: frontend
+    tier: db
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+    

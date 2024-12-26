@@ -1,3 +1,4 @@
+#Deployment is used in upgrading the image version of the image
 kind: Deployment
 apiVersion: apps/v1
 metadata:

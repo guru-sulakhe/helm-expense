@@ -10,7 +10,7 @@ metadata:
     project: expense
     tier: db
 spec:
-  replicas: 2
+  replicas: {{ .Values.deployment.replicas}}
   selector: 
     matchLabels:
       component: mysql
@@ -25,4 +25,4 @@ spec:
         project: expense
     spec:
     - name: mysql
-      image: guru1188/mysql:v1.0
+      image: guru1188/mysql:{{ .Values.deployment.imageVersion}}

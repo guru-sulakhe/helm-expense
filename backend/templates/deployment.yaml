@@ -25,6 +25,7 @@ spec:
         tier: app
         project: expense
     spec:
+    containers:
     - name: backend
       image: guru1188/backend:{{ .Values.deployment.imageVersion }}
       envFrom:

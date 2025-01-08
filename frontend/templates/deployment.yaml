@@ -24,16 +24,15 @@ spec:
         tier: web
         project: expense
     spec:
-    - name: frontend
-      image: guru1188/frontend:{{ .Values.deployment.imageVersion}}
-      # mounting volume nginx-conf
-      volumeMounts:
-      - name: nginx-conf
-        mountPath: /etc/nginx/nginx.conf
-        subPath: nginx.conf
-        readOnly: true
-      volumes:
-      - name: nginx-conf
+      containers:
+      - name: frontend
+        image: guru1188/frontend:{{ .Values.deployment.imageVersion}}
+        # mounting volume nginx-conf
+        volumeMounts:
+        - name: nginx-conf
+          mountPath: /etc/nginx/nginx.conf
+          subPath: nginx.conf
+          readOnly: true
       # envFrom:
       # - configMapRef:
       #     name: frontend

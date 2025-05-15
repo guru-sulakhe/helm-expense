@@ -16,3 +16,4 @@ spec:
   - protocol: TCP
     port: 80 #servicer port
     targetPort: 8080
+    nodePort: {{ .Values.service.nodePort}}

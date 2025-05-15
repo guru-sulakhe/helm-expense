@@ -26,3 +26,7 @@ spec:
     spec:
     - name: mysql
       image: guru1188/mysql:{{ .Values.deployment.imageVersion }}
+
+
+# $ helm install mysql .
+# $ helm list

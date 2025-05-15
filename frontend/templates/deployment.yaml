@@ -43,3 +43,6 @@ spec:
           items:
           - key: nginx.conf
             path: nginx.conf
+
+  # $ helm install frontend .
+# $ helm list

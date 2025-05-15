@@ -31,3 +31,6 @@ spec:
       envFrom:
       - configMapRef:
           name: backend #your configmap name
+
+# $ helm install backend .
+# $ helm list

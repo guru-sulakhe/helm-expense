@@ -5,7 +5,7 @@ metadata:
   name: nginx
 spec:
   type: LoadBalancer
-  selectors:
+  selector:
     app: nginx
     purpose: HELM
   ports:

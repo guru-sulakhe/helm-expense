@@ -6,7 +6,7 @@ metadata:
   #attaching to expense namespace
   namespace: expense
 spec: 
-  selectors:
+  selector:
     project: expense
     component: mysql
     tier: db

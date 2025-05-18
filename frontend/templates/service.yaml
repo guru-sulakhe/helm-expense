@@ -8,7 +8,7 @@ metadata:
   namespace: expense
 spec: 
   type: LoadBalancer
-  selectors:
+  selector:
     project: expense
     component: frontend
     tier: web
